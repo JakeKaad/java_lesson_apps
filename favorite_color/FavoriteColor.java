@@ -4,14 +4,23 @@ public class FavoriteColor {
   public static void main(String[] args) {
     Console console = System.console();
 
-
+    // First Application
     System.out.println("What is your favorite color?");
-    String color = console.readLine();
-    System.out.println("What is your favorite number?");
     String favoriteColor = console.readLine();
-    Integer intColor = Integer.parseInt(favoriteColor);
+    System.out.println("Your favorite color is " + favoriteColor + "? Me too!");
 
-    console.printf("My favorite color is %s, too! \n", color);
-    console.printf("My favorite number is %d, so close! \n", (intColor + 1));
+    // Second half of lesson change println to printf for formatted strings
+    console.printf("My favorite color is %s, too! \n", favoriteColor);
+    
+    // Second Application
+    System.out.println("What is your favorite number?");
+    String favoriteNumber = console.readLine();
+
+    // Second half of lesson change println to printf for formatted strings
+    console.printf("My favorite number is %s, too! \n", favoriteNumber);
+
+    // Make the lesson a little bit more dynamic
+    Integer intNumber = Integer.parseInt(favoriteNumber);
+    console.printf("My favorite number is %d, so close! \n", (intNumber + 1));
   }
 }
