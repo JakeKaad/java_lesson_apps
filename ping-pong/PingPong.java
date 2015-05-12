@@ -9,15 +9,15 @@ public class PingPong {
     String myNumber = console.readLine();
     Integer userNumber = Integer.parseInt(myNumber);
 
-    for ( Integer num = 1 ; num < userNumber ; num++ ) {
-      if ( num % 15 == 0 ) {
+    for ( Integer number = 1 ; number < userNumber ; number++ ) {
+      if ( number % 15 == 0 ) {
         System.out.println("Ping-Pong");
-      } else if ( num % 3 == 0 ) {
+      } else if ( number % 3 == 0 ) {
         System.out.println("Ping");
-      } else if ( num % 5 == 0 ) {
+      } else if ( number % 5 == 0 ) {
         System.out.println("Pong");
       } else {
-        System.out.println(num);
+        System.out.println(number);
       }
     }
   }
