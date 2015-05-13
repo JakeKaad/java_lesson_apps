@@ -13,10 +13,10 @@ public class App {
 
 
     get("/", (request, response) -> {
-      // Map model = new HashMap();
-      //
-      // model.put("template", "templates/hello.wm" );
-      return new ModelAndView(new HashMap(), layout);
+      Map model = new HashMap();
+
+      model.put("template", "templates/hello.wm" );
+      return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
     get("/favorite_photos", (request, response) -> {
