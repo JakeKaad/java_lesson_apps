@@ -5,7 +5,7 @@ public class LeapYear {
 
   }
 
-  public boolean leapYear(Integer year) {
+  public boolean checkIfLeapYear(Integer year) {
     return year % 4 == 0;
   }
 }
