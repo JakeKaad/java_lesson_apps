@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+archivesBaseName = "title-case"
+version = '1.0'
+mainClassName = "TitleCase"
+
+repositories {
+ mavenCentral()
+}
+
+dependencies {
+  testCompile group: 'junit', name: 'junit', version: '4.+'
+}
