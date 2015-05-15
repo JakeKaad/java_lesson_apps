@@ -1,0 +1,11 @@
+<h1> Welcome to FoShizzle! </h1>
+<p> Submit a word and we will FoShizzle it! </p>
+
+<form action="/foshizzle_it" method="post" id="foshizzle-form">
+  <input type="text" name="word">
+  <input type="submit" value="submit">
+</form>
+
+#if( $word )
+  <strong> $word </strong>
+#end
