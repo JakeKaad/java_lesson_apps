@@ -1,0 +1,23 @@
+public static void main(String[] args) {
+  String layout = "templates/layout.wm";
+
+  get("/", (request, response) -> {
+    Map model = new HashMap();
+
+    model.put("template", "templates/form.wm");
+    return new ModelAndView(model, layout);
+  }, new VelocityTemplateEngine());
+
+  get("/find-score", (request, response) -> {
+    Map model = new HashMap();
+
+    model.put("template", "templates/story.wm");
+    return new ModelAndView(model, layout);
+  }, new VelocityTemplateEngine());
+
+
+
+import spark.ModelAndView;
+import template.VelocityTemplateEngine;
+
+import static spark.Spark.*;

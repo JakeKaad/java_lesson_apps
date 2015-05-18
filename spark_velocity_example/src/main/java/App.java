@@ -2,9 +2,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import spark.ModelAndView;
-import template.VelocityTemplateEngine;
-
 import static spark.Spark.*;
+import spark.template.velocity.VelocityTemplateEngine;
 
 public class App {
   public static void main(String[] args) {
